@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <html>
+<title>Webinar Demo</title>
+
+<head>
+   <script type="text/javascript" src="https://cdns.gigya.com/js/gigya.saml.js?apiKey=3_-HiWBv2RnMsgoNwaXDIy4P39v9BokasJTKSUUz0PQU9u-Q_n5HPd-ljdL7oGDfuu"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
-<script type="text/javascript" src="https://cdns.gigya.com/js/gigya.saml.js?apiKey=3_-HiWBv2RnMsgoNwaXDIy4P39v9BokasJTKSUUz0PQU9u-Q_n5HPd-ljdL7oGDfuu">
-   {
-        loginURL:"https://gomege.github.io/login.html",
-        logoutURL: "https://gomege.github.io/logout.html"
-    }
-</script>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <script>
+        //function that allows you to determine if the gigya.js has loaded
+        $(document).ready(function() {
+            document.getElementById("loggedOut").style.display = "block";
+            document.getElementById("loggedIn").style.display = "none";
+            document.getElementById("loggedIn2").style.display = "none";
+            document.getElementById("loggedIn3").style.display = "none";
+        });
+
+        function logIn() {
+            alert(“login”);
+            document.getElementById("loggedOut").style.display = "none";
+            document.getElementById("loggedIn").style.display = "block";
+            document.getElementById("loggedIn2").style.display = "block";
+            document.getElementById("loggedIn3").style.display = "block";
+        }
+
+        function profile() {
+            alert(“profile update”);
+        }
+
+        function logout() {
+            alert(“logout”);
+            document.getElementById("loggedOut").style.display = "block";
+            document.getElementById("loggedIn").style.display = "none";
+            document.getElementById("loggedIn2").style.display = "none";
+            document.getElementById("loggedIn3").style.display = "none";
+        }
+
+        function newsletter() {
+            alert(“newsletter”);
+        }
+    </script>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="logout()"><i class="fa fa-bars"></i></a>
+            <a href=v ascript:void(0); " onclick="logout() "id="loggedIn " class="w3-bar-item w3-button w3-padding-large w3-theme-d4 "><i class="fa fa-home w3-margin-right "></i>Logout</a>
+  <a href= vascript:void(0);" onclick="logIn()" id="loggedOut" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Login</a>
+            <a href="#" id="loggedIn3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+            <a href="javascript:void(0);" onclick="profile()" id="loggedIn2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="javascript:void(0);" onclick="newsletter()" id="newsletter" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-right w3-hover-white" title="Newsletter"><i class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-display-container" style="margin-bottom:50px">
+        <img src="https://www.w3schools.com/w3images/beach3.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-container w3-amber w3-hover-orange w3-hide-small" style="bottom:10%;opacity:0.7;width:70%">
+            <h2><b>4 Good Reasons<br>For travelling with us</b></h2>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container" style="margin:50px 0">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-border-amber">
+                <img src="https://www.w3schools.com/w3images/cellphone.jpg" style="width:100%">
+                <h2>Smart Vacation</h2>
+                <p>Full vacation control from your cell phone.</p>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-border-amber">
+                <img src="https://www.w3schools.com/w3images/sealions.jpg" style="width:100%">
+                <h2>Super Offers</h2>
+                <p>Up to 50% offers. Always 25% student offers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container" style="margin:50px 0">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-border-orange">
+                <img src="https://www.w3schools.com/w3images/truck.jpg" style="width:100%">
+                <h2>Car Rental Included</h2>
+                <p>Wherever you travel our car rental is included.</p>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-border-orange">
+                <img src="https://www.w3schools.com/w3images/nowornever.jpg" style="width:100%">
+                <h2>Realize Your Dreams</h2>
+                <p>Don't wait until it is to late.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
