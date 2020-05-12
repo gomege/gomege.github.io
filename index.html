@@ -33,14 +33,14 @@ function checkStatus(Response) {
                 document.getElementById("loggedOut").style.display = "block";
                 document.getElementById("loggedIn").style.display = "none";
                 document.getElementById("loggedIn2").style.display = "none";
-                document.getElementById("loggedIn3").style.display = "none";
+                document.getElementById("Registr").style.display = "none";
         }
         else
         {
                 document.getElementById("loggedOut").style.display = "none";
                 document.getElementById("loggedIn").style.display = "block";
                 document.getElementById("loggedIn2").style.display = "block";
-                document.getElementById("loggedIn3").style.display = "block";
+                document.getElementById("Registr").style.display = "block";
         }
 }
 
@@ -89,12 +89,12 @@ function newsletter() {
     <div class="w3-top">
         	<div class="w3-bar w3-theme-d2 w3-left-align w3-large">
 			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="logout()"><i class="fa fa-bars"></i></a>
-			<a href="javascript:void(0);" onclick="register() "id="Registr" class="w3-bar-item w3-button w3-padding-large w3-theme-d4 "><i class="fa fa-wpforms w3-margin-right "></i>Register</a>
+			<a href="javascript:void(0);" onclick="register()" id="Registr" class="w3-bar-item w3-button w3-padding-large w3-theme-d4 "><i class="fa fa-wpforms w3-margin-right "></i>Register</a>
 			<a href="javascript:void(0);" onclick="logIn()" id="loggedIn" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-sign-in w3-margin-right"></i>Login</a>
 			<a href="javascript:void(0);" id="loggedIn3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
 			<a href="javascript:void(0);" onclick="profile()" id="loggedIn2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
 			<a href="javascript:void(0);" onclick="newsletter()" id="newsletter" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-right w3-hover-white" title="Subscribe"><i class="fa fa-envelope w3-margin-right"></i>contact us</a>
-			<a href="javascript:void(0);" onclick="logout() "id="loggedOut" class="w3-bar-item w3-button w3-padding-large w3-right"><i class="fa fa-sign-out w3-margin-right"></i>Logout</a>
+			<a href="javascript:void(0);" onclick="logout()" id="loggedOut" class="w3-bar-item w3-button w3-padding-large w3-right"><i class="fa fa-sign-out w3-margin-right"></i>Logout</a>
 			<div class="w3-dropdown-hover w3-hide-small"> </div>
         	</div>
     </div>
