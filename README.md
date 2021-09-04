@@ -1,3 +1,3 @@
 # gomege.github.io
-Static websise
-just another line
+Site to serve proxy pages
+relevant for integration BTP <-> CDC
